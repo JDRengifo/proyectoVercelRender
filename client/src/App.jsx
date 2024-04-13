@@ -1,11 +1,14 @@
 import { Routes, Route  } from 'react-router-dom'
 import Home from "./views/home/Home"
-import Create from "./views/create/Create"
+import axios from 'axios'
 import Detail from "./views/detail/Detail"
 import MainPage from "./views/mainPage/MainPage"
 import Activities from './views/activities/Activities'
 import './App.css'
 import CreateActivities from './views/createActivities/CreateActivities'
+
+const URL = import.meta.env.VITE_URL
+axios.defaults.baseURL = URL
 
 function App() {
  

@@ -13,7 +13,7 @@ export const ORDER_CARDS_X_ACTIVITY = "ORDER_CARDS_X_ACTIVITY";
 
 export function getCountries(){
     return async function (dispatch){
-        const response = await axios("http://localhost:3001/countries");
+        const response = await axios("/countries");
         return dispatch({
             type: "GET_COUNTRIES",
             payload: response.data
@@ -24,7 +24,7 @@ export function getCountries(){
 export function getByName(nombre){
     // console.log("Actions", nombre)
     return async function (dispatch){
-        const response = await axios(`http://localhost:3001/countries/?name=${nombre}`);
+        const response = await axios(`/countries/?name=${nombre}`);
         // console.log(response.data)
         return dispatch({
             type: "GET_BY_NAME",
@@ -36,7 +36,7 @@ export function getByName(nombre){
 export function getById(id){
     // console.log("Actions", id)
     return async function (dispatch){
-        const response = await axios(`http://localhost:3001/countries/${id}`);
+        const response = await axios(`/countries/${id}`);
         // console.log("Actions", response.data)
         return dispatch({
             type: "GET_BY_ID",
@@ -48,7 +48,7 @@ export function getById(id){
 export function getAllActivities(){
     // console.log("Actions", id)
     return async function (dispatch){
-        const response = await axios(`http://localhost:3001/activities`);
+        const response = await axios(`/activities`);
         // console.log("Actions", response.data)
         return dispatch({
             type: "GET_ALL_ACTIVITIES",
@@ -84,7 +84,7 @@ export const orderCardsXContinents = (payload)=>{
 export function postActivities(actividades){
     console.log("Actions", actividades)
     return async function (dispatch){
-        const response = await axios.post("http://localhost:3001/activities",actividades);
+        const response = await axios.post("/activities",actividades);
         // console.log("Actions5", response.data)
         window.alert('Actividad Creada Con Exito')
        
