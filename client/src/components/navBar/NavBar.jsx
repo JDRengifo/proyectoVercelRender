@@ -26,7 +26,7 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
           <div className='buscarX'>
             <form onSubmit= {handleSubmit}>
 
-              <h5>BUSCADOR DE PAÍS POR NOMBRE O CODIGO CO3</h5>
+              {/* <h5>BUSCADOR DE PAÍS POR NOMBRE O CODIGO CO3</h5> */}
               <input placeholder="Buscar" onChange={handleChange}/>
               <button type='submit' >BUSCAR</button>
               <h5>FILTRADORES DE PAISE</h5>
