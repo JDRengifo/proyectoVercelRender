@@ -1,0 +1,96 @@
+.detailDiv {
+    /* background-color: rgb(236, 236, 16, 0.4); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vw;
+   
+   
+}
+
+.detailDatos {
+    display: flex;
+    background-color: rgb(172, 139, 57);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top:  20px;
+    height: 90%;
+    width: 70%;
+    padding: 20px;
+    display: grid; 
+    
+    grid-template-rows: 30% 40%  30%; 
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+ 
+}
+
+ .g4 {
+    /* border: 3px solid rgb(226, 191, 191); */
+    grid-column: 2/3;
+    grid-row: 1;
+} 
+
+.bander {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.actDetail {
+    border-radius: 5%;
+    border: 2px solid black;
+    margin: 5px;
+    width: 23%;
+    height: 70%;
+    
+    
+}
+
+.bandera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.detalles {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.grid2 {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 3px solid black;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 26, 14, 0.5);
+}
+.grid1 {
+    display: flex;
+    background-color: rgb(172, 139, 57);
+    display: grid;
+    display: inline-block;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+    /* grid-column: 1/3;
+    grid-row: 1; */
+}
+
+/* .detailDatos {
+    margin: 10px;
+    width: 800px;
+    height: 700px;
+    background-color: rgb(207, 207, 207, 0.5);
+} */

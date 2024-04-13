@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "rutes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}

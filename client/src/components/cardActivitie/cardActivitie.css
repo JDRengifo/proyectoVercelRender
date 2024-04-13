@@ -1,0 +1,18 @@
+.activitieContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 211, 172);
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    cursor: pointer;
+    /* -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out; */
+}
+
+/* .activitieContainer:hover {
+    transform: scale(1.05);
+} */
