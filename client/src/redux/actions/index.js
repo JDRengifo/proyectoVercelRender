@@ -49,7 +49,7 @@ export function getAllActivities(){
     // console.log("Actions", id)
     return async function (dispatch){
         const response = await axios(`/activities`);
-        // console.log("Actions", response.data)
+        console.log("Actions", response.data)
         return dispatch({
             type: "GET_ALL_ACTIVITIES",
             payload: response.data
