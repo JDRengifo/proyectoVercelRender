@@ -48,7 +48,7 @@ export function getById(id){
 export function getAllActivities(){
     // console.log("Actions", id)
     return async function (dispatch){
-        const response = await axios(`/activities`);
+        const response = await axios("/activities");
         console.log("Actions", response.data)
         return dispatch({
             type: "GET_ALL_ACTIVITIES",
