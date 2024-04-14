@@ -29,7 +29,7 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
               {/* <h5>BUSCADOR DE PAÍS POR NOMBRE O CODIGO CO3</h5> */}
               <input placeholder="Buscar" onChange={handleChange}/>
               <button type='submit' >BUSCAR</button>
-              <h5>FILTRADORES DE PAISE</h5>
+              <h5>FILTRADORES DE PAISES</h5>
             </form>
             </div>
           </div>
