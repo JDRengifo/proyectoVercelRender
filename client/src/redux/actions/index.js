@@ -22,11 +22,9 @@ export function getCountries(){
 }
 
 export function getByName(nombre){
-    // console.log("Actions", nombre)
-    return async function (dispatch){
+     return async function (dispatch){
         const response = await axios(`/countries/?name=${nombre}`);
-        // console.log(response.data)
-        return dispatch({
+          return dispatch({
             type: "GET_BY_NAME",
             payload: response.data
         })
@@ -34,11 +32,9 @@ export function getByName(nombre){
 }
 
 export function getById(id){
-    // console.log("Actions", id)
     return async function (dispatch){
         const response = await axios(`/countries/${id}`);
-        // console.log("Actions", response.data)
-        return dispatch({
+           return dispatch({
             type: "GET_BY_ID",
             payload: [response.data]
         })

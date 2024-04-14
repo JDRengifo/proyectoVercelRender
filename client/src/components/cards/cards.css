@@ -1,4 +1,8 @@
 .cardsContenedor {
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     width: 85vw;
     margin: 0 auto;
     display: grid;

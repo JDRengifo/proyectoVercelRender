@@ -28,10 +28,6 @@ function Home() {
   };
   
   function handleSubmit(event) {
-
-    console.log("Home Imput", event)
-    console.log("Home Imput", searchString)
-    console.log("Home Imput", searchString.length)
     event.preventDefault();
     if(searchString.length===3 ) dispatch(getById(searchString))
     if(searchString.length>3) dispatch(getByName(searchString))
@@ -86,12 +82,12 @@ const handleOrderActivity = (event) => {
       <Cards 
         ncountries={ncountries}
       />
-      <Pagination 
+      
+      {numDePaginasTotal>1?(<Pagination 
         paginaActual={paginaActual}
         setPaginasActual={setPaginasActual}
         numDePaginasTotal={numDePaginasTotal} 
-        
-      />
+      />):undefined}
     </div>
 
   )

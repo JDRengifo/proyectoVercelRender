@@ -22,7 +22,7 @@ const Pagination = ({
             <div className="controllerPag">
                 <h2 id='h2pag' className="paguinar" onClick={handlerAnterior}>Anterior</h2>
                 <h2 className="paguinar">Pagina {paginaActual}/de {numDePaginasTotal}</h2>
-                <h2 id='h2pag' className="paguinar" onClick={handlerPosterior}>Siguente</h2>
+                <h2 id='h2pag' className="paguinar" onClick={handlerPosterior}>Siguiente</h2>
             </div>
         </div>
     )
