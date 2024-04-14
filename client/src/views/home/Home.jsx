@@ -83,7 +83,7 @@ const handleOrderActivity = (event) => {
         ncountries={ncountries}
       />
       
-      {numDePaginasTotal>1?(<Pagination 
+      {allCountries.length>=1?(<Pagination 
         paginaActual={paginaActual}
         setPaginasActual={setPaginasActual}
         numDePaginasTotal={numDePaginasTotal} 
