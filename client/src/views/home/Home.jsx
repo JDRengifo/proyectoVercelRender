@@ -87,7 +87,7 @@ const handleOrderActivity = (event) => {
         paginaActual={paginaActual}
         setPaginasActual={setPaginasActual}
         numDePaginasTotal={numDePaginasTotal} 
-      />):undefined}
+      />): window.alert('no se encontro el país')}
     </div>
 
   )
