@@ -101,7 +101,7 @@ function CreateActivities (){
       return(
         <div className="creaActivities">
 
-          <h2>Crear Actividades en esta pagina</h2>
+          {/* <h2>Crear Actividades en esta pagina</h2> */}
           <form className='activitieFormContainer' onSubmit={onSubmit}>
             <div className="createGrid">
                 <div className="creaImagenes">
