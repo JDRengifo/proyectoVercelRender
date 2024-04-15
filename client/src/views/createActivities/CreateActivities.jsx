@@ -11,11 +11,11 @@ function CreateActivities (){
     const dispatch = useDispatch()
     const allCountries = useSelector((state)=> state.allCountries)
     const [error, setError] = useState({
-      nombre: "", 
-      duracion: "", 
-      dificultad: "", 
-      temporada: "",
-      paises: "",
+      nombre: "/", 
+      duracion: "/", 
+      dificultad: "/", 
+      temporada: "/",
+      paises: "/",
     })
     const [actividades, setActividades]=useState({
         nombre: "", 

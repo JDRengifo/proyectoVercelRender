@@ -2,6 +2,7 @@
     background-color: rgb(206, 112, 45, 0.4);
     background-attachment: fixed;
     background-size: cover;
+    padding: 10px;
     width: 100vw;
     height: 250vh;
     display: flex;
@@ -14,7 +15,7 @@
     height: 40vw;
     display: grid;
     grid-template-columns: 28% 32% 40%;
-    grid-template-rows: 35vw;
+    grid-template-rows: 30vw;
     gap: 10px;
 }
 
