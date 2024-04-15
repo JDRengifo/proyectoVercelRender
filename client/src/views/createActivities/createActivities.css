@@ -10,10 +10,10 @@
     
 }
 .createGrid {
-    width: 80vw;
+    width: 90vw;
     height: 40vw;
     display: grid;
-    grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 25% 35% 40%;
     gap: 10px;
 }
 

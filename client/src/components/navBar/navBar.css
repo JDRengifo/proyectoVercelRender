@@ -19,7 +19,7 @@
     font-size: 16px;
 }
 
-.botonBuscar {
+.botonBuscar:hover {
  cursor: pointer;
  background-color: rgb(189, 223, 155);
 }
