@@ -75,19 +75,16 @@ const handleOrderActivity = (event) => {
           handleOrderContinents={handleOrderContinents}
           handleOrderActivity = {handleOrderActivity}
         />
-
-      
-    <h2 className='homeTitle'>Página Principal</h2>
+       
+    {allCountries.length>=1?(<Pagination 
+      paginaActual={paginaActual}
+      setPaginasActual={setPaginasActual}
+      numDePaginasTotal={numDePaginasTotal} 
+    />): undefined}
 
       <Cards 
         ncountries={ncountries}
       />
-      
-      {allCountries.length>=1?(<Pagination 
-        paginaActual={paginaActual}
-        setPaginasActual={setPaginasActual}
-        numDePaginasTotal={numDePaginasTotal} 
-      />): window.alert('no se encontro el país')}
     </div>
 
   )
