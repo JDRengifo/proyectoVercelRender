@@ -5,8 +5,8 @@
 } */
 
 .controllerPag {
-    width: 50%;
-    height: 60px;
+    width: 30%;
+    height: 50px;
     border-radius: 20px;
     margin: 20px;
     border: 3px solid rgb(94, 72, 19);
@@ -17,7 +17,7 @@
 }
 
 .paguinar {
-    font-size: 16px;
+    font-size: 24px;
     color:rgb(6, 3, 219);
     -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: rgb(94, 72, 19);
