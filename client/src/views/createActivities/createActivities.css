@@ -14,7 +14,7 @@
     height: 40vw;
     display: grid;
     grid-template-columns: 28% 32% 40%;
-    grid-template-rows: 80vw;
+    grid-template-rows: 50vw;
     gap: 10px;
 }
 
