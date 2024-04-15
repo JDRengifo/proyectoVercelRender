@@ -61,7 +61,7 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
             <div>
               <h5>CREAR ACTIVIDADES</h5>
               <Link to={'/createActivities'}>
-                 <button onClick={onClickHome}>CreateActivities</button>
+                 <button className='botonAct' onClick={onClickHome}>CreateActivities</button>
                </Link> 
             </div>
           </div>

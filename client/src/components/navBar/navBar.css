@@ -16,6 +16,11 @@
     display: flex;
 } */
 
+.botonAct:hover {
+ cursor: pointer;
+ background-color: rgb(189, 223, 155);
+}
+
 .navBox {
     background-color: rgba(18, 91, 228, 0.5);
     background-attachment: fixed;

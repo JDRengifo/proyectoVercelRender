@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
-    min-height: 1500vh;
+    min-height: 210vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@ body {
   .homeTitle {
     margin-top: 75px;
     margin-bottom: 50px;
-    font-size: 45px;
+    font-size: 35px;
     color:aliceblue;
     -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
