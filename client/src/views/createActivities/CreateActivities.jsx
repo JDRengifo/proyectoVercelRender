@@ -41,30 +41,21 @@ function CreateActivities (){
         }
          const volverInicio = document.getElementById("selectorPaises")
          volverInicio.value = ""
-         console.log(volverInicio)
-            //  var otro =[]
-            //  for(let i =0;i<actividades.paises.length;i++){
-           
-            // var traePais = allCountries.filter((pais)=>pais.id === actividades.paises[i])
-            //   otro = otro.concat(traePais)
-            //  }
+                   
         setActividades({
           ...actividades,
           paises: paisesFilter,
           nombrePaises: newNombrePais
         })
       }
-      console.log('linea 65',actividades)
-      
+          
       const handleClick = (act)=>{
         setActividades({
           ...actividades,
           imagen: String(act)
         })
       }
-        
-      console.log('linea 66', error)
-      
+               
       const handleChange =(event)=>{
         if (event.target.parentNode.parentNode.id === "temporada") {
           
@@ -72,8 +63,7 @@ function CreateActivities (){
             ...actividades,
             temporada: event.target.value,
           });
-          // console.log("Plataformas: ", actividades.temporada);
-          
+                    
         }
         if (event.target.type !== "checkbox" ) {
           setActividades({
