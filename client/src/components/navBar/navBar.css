@@ -15,6 +15,14 @@
 .buscarX {
     display: flex;
 } */
+.filtrar {
+    font-size: 16px;
+}
+
+.botonBuscar {
+ cursor: pointer;
+ background-color: rgb(189, 223, 155);
+}
 
 .botonAct:hover {
  cursor: pointer;

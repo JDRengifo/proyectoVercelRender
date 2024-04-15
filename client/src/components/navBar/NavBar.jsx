@@ -27,9 +27,9 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
             <form onSubmit= {handleSubmit}>
 
               {/* <h5>BUSCADOR DE PAÍS POR NOMBRE O CODIGO CO3</h5> */}
-              <input placeholder="Buscar" onChange={handleChange}/>
-              <button type='submit' >BUSCAR</button>
-              <h5>FILTRADORES DE PAISES</h5>
+              <input placeholder="Por nombre ó código CO3" onChange={handleChange}/>
+              <button className='botonBuscar' type='submit' >BUSCAR</button>
+              <h5 className='filtrar'>FILTRADORES DE PAISES</h5>
             </form>
             </div>
           </div>
@@ -37,7 +37,7 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
 
           <div className='navGrid3'>
             <div>
-            <h5>ORDENAR POR ACTIVIDAD TURISTICA</h5>
+            <h5 className='filtrar'>ORDENAR POR ACTIVIDAD TURISTICA</h5>
               <select name="selectorPaises" onChange={handleOrderActivity}>
                 <option value=''>{' '}
                 </option>
@@ -59,7 +59,7 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
           
           <div className='navGrid4'>
             <div>
-              <h5>CREAR ACTIVIDADES</h5>
+              <h5 className='filtrar'>CREAR ACTIVIDADES</h5>
               <Link to={'/createActivities'}>
                  <button className='botonAct' onClick={onClickHome}>CreateActivities</button>
                </Link> 
