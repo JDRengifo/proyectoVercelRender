@@ -126,7 +126,7 @@ function CreateActivities (){
                             onChange={handleChange}
                         />
                         <h4>{actividades.nombre}</h4>
-                        {/* {console.log('linea 90',error)} */}
+                       
                         {error.nombre !== "" && <h4 className="errors">{error.nombre}</h4>}
                     </div>
 
@@ -141,7 +141,7 @@ function CreateActivities (){
                             value={actividades.duracion}
                             onChange={handleChange}
                             />
-                        
+                        <h4>{actividades.duracion}</h4>
                         {error.duracion !== "" && <h4 className="errors">{error.duracion}</h4>}
                     </div>
                     <div className="creaGrid15">
@@ -154,6 +154,7 @@ function CreateActivities (){
                             value={actividades.dificultad}
                             onChange={handleChange}
                         />
+                        <h4>{actividades.dificultad}</h4>
                         {error.dificultad !== "" && <h4 className="errors">{error.dificultad}</h4>}
                     </div>
 
@@ -173,18 +174,10 @@ function CreateActivities (){
                   <select id = 'selectorPaises' onChange={handleChangeSelector}>
                     <option value="">Escoja el país</option>
                       {allCountries.map((country)=>(<option value={`${country.id}`}>{country.nombre}</option>))}
-
                   </select>
 
-                  
-
-                  {/* <ReactSelect 
-                      id = 'selectorPaises'
-                      options = {allCountries.map((country)=> ({label:country.nombre, value:country.id}))}
-                      onChange={handleChangeSelector}
-                  /> */}
                   <br />
-                  <h2>{actividades.nombrePaises.join(', ')}</h2>
+                  <h3>{actividades.nombrePaises.join(', ')}</h3>
                   {error.paises !== "" && <h4 className="errors">{error.paises}</h4>}
                 </div>
               </div>
@@ -214,6 +207,7 @@ function CreateActivities (){
                               <input name="temporada" value="Primavera" type="radio" id="primavera"/>
                               <label htmlFor="primavera">Primavera</label>
                           </div>
+                          <h4>{actividades.temporada}</h4>
                           {error.temporada !== "" && <h4 className="errors">{error.temporada}</h4>}
                       </div>
                     </div>
