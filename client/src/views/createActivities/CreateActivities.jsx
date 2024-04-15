@@ -11,11 +11,11 @@ function CreateActivities (){
     const dispatch = useDispatch()
     const allCountries = useSelector((state)=> state.allCountries)
     const [error, setError] = useState({
-      nombre: "/", 
-      duracion: "/", 
-      dificultad: "/", 
-      temporada: "/",
-      paises: "/",
+      nombre: "Nombre de la actividad a crear", 
+      duracion: "Duración de la actividad en numero de horas", 
+      dificultad: "Grado de la dificultad entre 1 y 6", 
+      temporada: "Elija 1 opción",
+      paises: "Puede elegir uno o varios paises, si tiene elegido uno y quiere eliminarlo solo vuelva a seleccionarlo",
     })
     const [actividades, setActividades]=useState({
         nombre: "", 
@@ -96,6 +96,8 @@ function CreateActivities (){
          dispatch(getCountries())
           
       },[dispatch])
+
+      let arregloState = allCountries.sort((a,b)=> a.nombre > b.nombre ? 1 : -1)
       
       
       return(
@@ -173,7 +175,7 @@ function CreateActivities (){
                   <h4>Elija el País (o paises) a asociar la actividad.</h4>
                   <select id = 'selectorPaises' onChange={handleChangeSelector}>
                     <option value="">Escoja el país</option>
-                      {allCountries.map((country)=>(<option value={`${country.id}`}>{country.nombre}</option>))}
+                      {arregloState.map((country)=>(<option value={`${country.id}`}>{country.nombre}</option>))}
                   </select>
 
                   <br />

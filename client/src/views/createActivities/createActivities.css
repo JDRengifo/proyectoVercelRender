@@ -121,6 +121,7 @@
 }
 
 .botonCrear:disabled {
- background-color: brown;
- cursor: no-drop;
+   margin-right: 20px;
+   background-color: brown;
+   cursor: no-drop;
 }
