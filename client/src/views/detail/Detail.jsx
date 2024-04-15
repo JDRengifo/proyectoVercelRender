@@ -32,8 +32,8 @@ return(
         
             <div className="g4">
               <h3>Sub-región: {country.subregion}.</h3>
-              <h3>Área: {country.area} kilometros Cuadrados.</h3>
-              <h3>Población: {country.poblacion} habitantes.</h3>
+              <h3>Área: {(country.area).toLocaleString()} kilometros Cuadrados.</h3>
+              <h3>Población: {(country.poblacion).toLocaleString()} habitantes.</h3>
             </div>
 
             <div className="bandera">
