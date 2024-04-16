@@ -16,8 +16,7 @@ function Detail(){
   }, [id]);
 
 const country = allCountries[0];
-console.log(country)
-                    
+
 return(
 <div className="detailDiv">
   <div className="detailDatos">

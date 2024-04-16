@@ -71,10 +71,9 @@ function CreateActivities (){
             [event.target.name]: event.target.value, // Sintaxis ES6 para actualizar la key correspondiente
           });
         }
-        // console.log(actividades.paises)
-        
+              
        setError(validate({...actividades,[event.target.name]: event.target.value}))
-      //  console.log(validate({...actividades,[event.target.name]: event.target.value}))
+     
      }
     
       const onSubmit = (event)=>{
