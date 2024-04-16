@@ -44,7 +44,7 @@ return(
         </div>
 
         <div className="grid2">
-          {country.Activities?.map((act)=><img className="actDetail" src={act.imagen} alt='imagen'  /> )}  
+          {country.Activities?.map((act)=><img key={act.nombre} className="actDetail" src={act.imagen} alt='imagen'  /> )}  
         </div>
            
         <div className="grid1">

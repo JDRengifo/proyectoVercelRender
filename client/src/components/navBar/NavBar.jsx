@@ -37,7 +37,7 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
               <select name="selectorPaises" onChange={handleOrderActivity}>
                 <option value=''>{' '}
                 </option>
-                {selectorACT.map((activity)=>(<option value={`${activity}`}>{activity}</option>))}</select>
+                {selectorACT.map((activity)=>(<option key={`${activity}`} value={`${activity}`}>{activity}</option>))}</select>
             </div>
           </div>
           
@@ -54,33 +54,33 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
           <div className='navGrid5'>
             <div className='navGrid51'>
               <select onChange={handleCount}>
-                <option value="B">Por Población</option>
-                <option value="X">Mayor_menor</option>
-                <option value="Y">Menor_Mayor</option>
+                <option key={'PB'} value="B">Por Población</option>
+                <option key={'PX'} value="X">Mayor_menor</option>
+                <option key={'PY'} value="Y">Menor_Mayor</option>
               </select>
             </div>
               
             {/* Ordenar por orden alfabetico */}
             <div className='navGrid52'>
               <select onChange={handleOrder}>
-                <option value="B">Orden Alfabético</option>
-                <option value="A">Ascendente</option>
-                <option value="D">Descendente</option>
+                <option key={'OB'} value="B">Orden Alfabético</option>
+                <option key={'OA'} value="A">Ascendente</option>
+                <option key={'OD'} value="D">Descendente</option>
               </select>
             </div>
               
             {/* Ordenar por Continente */}
             <div className='navGrid53'>
               <select onChange={handleOrderContinents}>
-                  <option value="A">Por Continente</option>
-                  <option value="All">todos</option>
-                  <option value="Africa">Africa</option>
-                  <option value="Antarctica">Antartida</option>
-                  <option value="Asia">Asia</option>
-                  <option value="Europe">Europa</option>
-                  <option value="North America">Norte América</option>
-                  <option value="South America">Sur América</option>
-                  <option value="Oceania">Oceanía</option>
+                  <option key={'CA'} value="A">Por Continente</option>
+                  <option key={'CAll'} value="All">todos</option>
+                  <option key={'Africa'} value="Africa">Africa</option>
+                  <option key={'Antartica'} value="Antarctica">Antartida</option>
+                  <option key={'Asia'} value="Asia">Asia</option>
+                  <option key={'Europe'} value="Europe">Europa</option>
+                  <option key={'NorthAmerica'} value="North America">Norte América</option>
+                  <option key={'SouhtAmerica'} value="South America">Sur América</option>
+                  <option key={'Oceania'} value="Oceania">Oceanía</option>
                 </select>
               </div>
    

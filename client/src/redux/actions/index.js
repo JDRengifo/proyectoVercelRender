@@ -28,7 +28,7 @@ export function getByName(nombre){
             type: "GET_BY_NAME",
             payload: response.data
         })
-    }
+    } 
 }
 
 export function getById(id){

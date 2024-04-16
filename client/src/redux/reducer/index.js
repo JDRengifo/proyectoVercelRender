@@ -33,7 +33,7 @@ function rootReducer(state = initialState, action){
                 allCountries: action.payload,
             }
         
-         case GET_BY_ID:
+         case GET_BY_ID: 
             return {
                 ...state,
                 allCountries: action.payload,

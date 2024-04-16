@@ -13,7 +13,6 @@ function Home() {
   const dispatch = useDispatch();
 
   const handleOrderContinents = (event)=>{
-    // console.log(event.target.value)
     dispatch(orderCardsXContinents(event.target.value));
   }
   const allCountries = useSelector((state)=> state.allCountries);
