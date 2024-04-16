@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
-import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import React, { useEffect } from "react"
 import {Link} from 'react-router-dom'
+import DetailText from "../../components/detailText/DetailText";
 import { getById } from "../../redux/actions";
 import './detail.css'
-import DetailText from "../../components/detailText/DetailText";
 
 function Detail(){
   const {id} = useParams();
@@ -44,22 +44,20 @@ return(
         </div>
 
         <div className="grid2">
-        {country.Activities?.map((act)=><img className="actDetail" src={act.imagen} alt='imagen'  /> )}  
+          {country.Activities?.map((act)=><img className="actDetail" src={act.imagen} alt='imagen'  /> )}  
         </div>
-          {console.log(country.Activities)}
-       
+           
         <div className="grid1">
-       
-       {country.Activities?.map(coun => (
-         <DetailText
-         key={coun.id}
+           {country.Activities?.map(coun => (
+           <DetailText
+              key={coun.id}
               id={coun.id}
               nombre={coun.nombre}
               dificultad={coun.dificultad}
               duracion={coun.duracion}
               temporada={coun.temporada}
               imagen={coun.imagen}
-              />
+            />
               ))}
         </div>
   </div>
