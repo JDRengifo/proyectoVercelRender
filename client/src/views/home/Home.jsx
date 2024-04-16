@@ -44,9 +44,6 @@ const handleCount = (event) => {
 const handleOrderActivity = (event) => {
   dispatch(orderXActivity(event.target.value));
 }
-
-
-
   
   useEffect(()=>{
     dispatch(getCountries()),

@@ -42,11 +42,9 @@ export function getById(id){
 }
 
 export function getAllActivities(){
-    console.log("Actions")
-    return async function (dispatch){
+     return async function (dispatch){
         const response = await axios("/activities");
-        console.log("Actions", response.data)
-        return dispatch({
+          return dispatch({
             type: "GET_ALL_ACTIVITIES",
             payload: response.data
         })
@@ -54,23 +52,20 @@ export function getAllActivities(){
 }
 
 export const orderCards = (payload) => {
-    // console.log(payload)
     return {
         type: ORDER_CARDS,
         payload,
     };
 };
 export const orderCardsXnum = (payload) => {
-    // console.log('Action',payload)
-    return {
+     return {
         type: ORDER_CARDS_POBLACION,
         payload,
     };
 };
 
 export const orderCardsXContinents = (payload)=>{ 
-    // console.log("Actions", payload)
-    return {
+   return {
         type: ORDER_CARDS_CONTINENTS,
         payload: payload
     }
@@ -78,17 +73,13 @@ export const orderCardsXContinents = (payload)=>{
 
 
 export function postActivities(actividades){
-    console.log("Actions", actividades)
     return async function (dispatch){
         const response = await axios.post("/activities",actividades);
-        // console.log("Actions5", response.data)
         window.alert('Actividad Creada Con Exito')
-       
     }
 }
 
 export function orderXActivity(payload){
-    // console.log("Actions", payload)
     return {
         type: ORDER_CARDS_X_ACTIVITY,
         payload: payload

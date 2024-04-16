@@ -15,16 +15,13 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
     dispatch(getCountries())
   }
 
-  console.log(allActivities)
   const selectorACT = allActivities.map(activity=>activity.nombre)
-  console.log(selectorACT)
-  return (
-    
-        <div className='navBox'>
-          <div className='navBoxgrid'>
-          <div className='navGrid1'>
-          <div className='buscarX'>
-            <form onSubmit= {handleSubmit}>
+   return (
+      <div className='navBox'>
+         <div className='navBoxgrid'>
+         <div className='navGrid1'>
+         <div className='buscarX'>
+          <form onSubmit= {handleSubmit}>
 
               {/* <h5>BUSCADOR DE PAÍS POR NOMBRE O CODIGO CO3</h5> */}
               <input placeholder="Por nombre ó código CO3" onChange={handleChange}/>
@@ -34,27 +31,14 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
             </div>
           </div>
 
-
           <div className='navGrid3'>
             <div>
             <h5 className='filtrar'>ORDENAR POR ACTIVIDAD TURISTICA</h5>
               <select name="selectorPaises" onChange={handleOrderActivity}>
                 <option value=''>{' '}
                 </option>
-
-
                 {selectorACT.map((activity)=>(<option value={`${activity}`}>{activity}</option>))}</select>
-
             </div>
-
-            {/* <div>
-              
-            <Select 
-                id = 'selectorPaises'
-                options = {allActivities.map((activity)=> ({label:activity.nombre, value:activity.id}))}
-                onChange={handleOrderActivity}
-                />
-            </div> */}
           </div>
           
           <div className='navGrid4'>
@@ -99,31 +83,16 @@ function NavBar({ handleChange, handleSubmit, handleOrder,handleOrderActivity, h
                   <option value="Oceania">Oceanía</option>
                 </select>
               </div>
-              
-
+   
             </div>
           </div>
           <div className='navGrid6'>
           <div className='navGrid2'>
           </div>
           
-        </div>
-          {/* <form onChange={handleChange}>
-            
-          </form>
-
-          <Link to={'/home'}>
-          <button onClick={onClickHome}>Home</button>
-          </Link>
-          */}
-        </div>
-
- 
-
+      </div>
+   </div>
   )
 }
 
 export default NavBar
-
-// https://developer.mozilla.org/es/docs/Web/HTML/Element/select
-// https://docs.google.com/spreadsheets/d/1z_9PuIsFweGAZNHGqYrm5JqTt-6icFAXllKDXP8i1PQ/edit#gid=0

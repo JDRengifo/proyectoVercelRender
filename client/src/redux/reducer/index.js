@@ -53,20 +53,17 @@ function rootReducer(state = initialState, action){
             }
          
             case ORDER_CARDS_CONTINENTS:
-                if(action.payload == 'All'){
-            //   console.log('Reducer.FILTER', state.allCountries)
-              return {
+              if(action.payload == 'All'){
+               return {
                 ...state,
                 allCountries: state.allCountriesCopy
               }
             } else {
-            //   console.log('Reducer Else FILTER ', state.allCountries)
-              const filter = state.allCountriesCopy.filter((char)=>char.continente === action.payload);
-              return {
-                // spread operator
-                ...state,
-                allCountries: filter,
-              }
+                 const filter = state.allCountriesCopy.filter((char)=>char.continente === action.payload);
+                  return {
+                     ...state,
+                     allCountries: filter,
+                  }
             }
        
          case ORDER_CARDS_POBLACION:
@@ -77,7 +74,6 @@ function rootReducer(state = initialState, action){
                 allCountries: [...state.allCountries].sort((a,b)=> a.poblacion < a.poblacion ? 1 : -1),
                 }
             } else {
-                // console.log('ORDER else', state.allCountries)
                 return {
                 ...state,
                 allCountries: [...state.allCountries].sort((a,b)=> a.poblacion > b.poblacion ? 1 : -1)
@@ -91,17 +87,12 @@ function rootReducer(state = initialState, action){
             }
                       
             case ORDER_CARDS_X_ACTIVITY:
-               
-                const filterXAparte = state.allCountriesCopy.filter((char)=> char.Activities?.map((item)=>(item.nombre)).includes(action.payload))
-                
-                return {
+               const filterXAparte = state.allCountriesCopy.filter((char)=> char.Activities?.map((item)=>(item.nombre)).includes(action.payload))
+                 return {
                    ...state,
                    allCountries: filterXAparte,
                  }
-                   
-
-                
-
+        
         default: return state;
     }
 
