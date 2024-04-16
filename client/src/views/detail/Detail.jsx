@@ -13,6 +13,9 @@ function Detail(){
     
   useEffect(() => {
     dispatch(getById(id))
+    return ()=> {
+      allCountries.length = 0; //? esto vacia el array
+    }
   }, [id]);
 
 const country = allCountries[0];
