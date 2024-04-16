@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 import {useDispatch, useSelector} from 'react-redux'
+import { Link } from "react-router-dom";
+
 import { getCountries, postActivities } from "../../redux/actions";
 import validate from "../../utils/validar/Validar";
-import { Link } from "react-router-dom";
 import {imagenesParaEscoger} from "../../utils/imagenesAEscoger" 
 import './createActivities.css'
 

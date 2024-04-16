@@ -2,7 +2,7 @@ const { Country } = require('../db');
 const axios = require('axios');
 
 const getCreateBdCountry = async (req, res)=>{
-    //try {
+    try {
         const allCountries = await axios.get('http://localhost:5000/countries')
         const dataAll = allCountries.data;
 
@@ -20,8 +20,7 @@ const getCreateBdCountry = async (req, res)=>{
             }
         });
         countries.forEach(async (elemento) => {
-                // console.log(elemento.subregion)
-                await Country.findOrCreate({
+             await Country.findOrCreate({
                     where: {
                     id: elemento.id,
                     nombre: elemento.nombre,
@@ -38,9 +37,9 @@ const getCreateBdCountry = async (req, res)=>{
                    
         return allCountries;
     
-    // } catch (error) {
-    //     res.status(400).json({error: error.message})
-    // }
+ } catch (error) {
+         res.status(400).json({error: error.message})
+     }
 }
 
 module.exports ={
