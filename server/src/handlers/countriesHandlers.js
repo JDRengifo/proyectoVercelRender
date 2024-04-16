@@ -22,8 +22,7 @@ const countriesHandler = async (req, res)=>{
 
 const countriesDetailHandler = async (req, res)=>{
     const {id} = req.params;
-    // res.status(200).send(`Detalle del Usuario ${id}`); //? esto fue de solo prueba de inicio 42:57
-    
+      
 try {
     const response = await getCountryById(id);
     res.status(200).json(response);

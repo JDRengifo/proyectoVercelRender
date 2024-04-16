@@ -21,7 +21,7 @@ console.log('Julian3', imagen)
     } catch (error) {
         res.status(400).json({error: error.message});
     }
-    // res.status(200).send(`creando actividades`);
+   
 };
 
 module.exports = {
