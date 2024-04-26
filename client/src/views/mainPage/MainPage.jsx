@@ -15,7 +15,9 @@ function MainPage() {
   const responseMessage = ()=>{
     navigate("/home")
   } 
-
+  const errorMessage = ()=>{
+    
+  } 
  
 
   return (
