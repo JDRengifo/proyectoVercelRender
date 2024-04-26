@@ -1,5 +1,6 @@
 
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { GoogleLogin } from '@react-oauth/google'
 
 import banderas from '../../../src/utils/banderas.png'
 import cubo8_1 from '../../../src/utils/cubo8_1.png'
@@ -9,6 +10,12 @@ import cubo8_2_2 from '../../../src/utils/cubo8_2_2.png'
 import './mainPage.css'
 
 function MainPage() {
+  const navigate = useNavigate()
+
+  const responseMessage = ()=>{
+    navigate("/home")
+  } 
+
  
 
   return (
@@ -69,9 +76,10 @@ function MainPage() {
             </div>
             </div>
           <div className='cubo9'>
-            <Link className='linlMain' to='/home'>
+          <GoogleLogin onSuccess={responseMessage} onError={errorMessage}/>
+            {/* <Link className='linlMain' to='/home'>
               <button className='buttonMain'>INGRESAR</button>
-            </Link>  
+            </Link>   */}
             
           </div>
          
